@@ -17,6 +17,7 @@ http communication protocol and some hosting service maybe
 -2.2 User Interfaces
 ```
 Interaction is made through a web/android client containing registration page + chat/profile feed/profile managing pages.
+[early mockup](https://github.com/bsuir-150503-2-2/SDLC-social/blob/main/design/Mockups.pdf)
 ```diff
 -2.3 User Characteristics
 ```

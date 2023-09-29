@@ -69,7 +69,10 @@ Badoo: Badoo также ориентирован на знакомства, но
 
 ## 2.1 Программные интерфейсы
 
-????
+- Серверная часть:
+   Интерфейсы для работы с базами данных на основе SQL-запросов (postgre-SQL, mySQL, ...), сетевые интерфейсы (std::boost, etc.)
+- Клиентская часть:
+   Сетевые интерфейсы (Node-JS, Android Native, ...), репрезентативные (Node-JS, React-JS, Android Native, Android Jetpack Compose, ...) 
 
 <a name="user_interface"/>
 

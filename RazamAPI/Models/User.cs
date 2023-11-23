@@ -5,6 +5,5 @@ namespace razam.Models
     public class User : IdentityUser
     {
         public Profile Profile { get; set; }
-        // Добавьте другие необходимые поля
     }
 }

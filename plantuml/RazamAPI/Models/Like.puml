@@ -1,0 +1,8 @@
+@startuml
+class Like {
+    + Id : int <<get>> <<set>>
+    + LikerId : string <<get>> <<set>>
+    + LikedId : string <<get>> <<set>>
+}
+Like --> "LikedAt" DateTime
+@enduml

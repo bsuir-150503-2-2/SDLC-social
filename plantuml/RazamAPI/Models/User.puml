@@ -1,0 +1,6 @@
+@startuml
+class User {
+}
+IdentityUser <|-- User
+User --> "Profile" Profile
+@enduml

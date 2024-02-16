@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="ProfileController">
+    <Position X="8" Y="7.75" Width="4" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAgAMAAAAAAAAAAAEQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controllers\ProfileController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UserController">
+    <Position X="13.25" Y="7.75" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAAAAAAAAACAAAAAABAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Controllers\UserController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApplicationDbContext">
+    <Position X="4.5" Y="0.5" Width="5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAEAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Data\ApplicationDbContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="razam.Models.Like">
+    <Position X="2.75" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>BAACAAAAAAAAAAEAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Like.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoginRegisterModel">
+    <Position X="10.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAQAAAAAAAAA=</HashCode>
+      <FileName>Models\LoginRegisterModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="razam.Models.Profile">
+    <Position X="5.5" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAADAAAAAAAAAAAACAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Profile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="razam.Models.ProfileUpdateModel">
+    <Position X="13" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ProfileUpdateModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="razam.Models.User">
+    <Position X="0.5" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>Models\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="razam.Options.AuthOptions">
+    <Position X="0.5" Y="0.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQQAAAAAQAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Options\AuthOptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProfileService" BaseTypeListCollapsed="true">
+    <Position X="8" Y="5" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAABAAACAAAAgEQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Implementations\ProfileService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="UserService" BaseTypeListCollapsed="true">
+    <Position X="13.25" Y="4.75" Width="5.25" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAEAABAAAAAgAAAAAAAAAAAIAAAAAEAAAAAA=</HashCode>
+      <FileName>Services\Implementations\UserService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="IProfileService">
+    <Position X="8.5" Y="2.75" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAACAAAAgEQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Interfaces\IProfileService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="IUserService">
+    <Position X="13.5" Y="2.75" Width="4.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAIAAAAAEAAAAAA=</HashCode>
+      <FileName>Services\Interfaces\IUserService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

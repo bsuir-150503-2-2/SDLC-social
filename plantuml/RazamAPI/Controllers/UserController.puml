@@ -1,0 +1,9 @@
+@startuml
+class UserController {
+    + UserController(userProfileService:IUserService)
+    + <<async>> Register(model:LoginRegisterModel) : Task<IActionResult>
+    + <<async>> Login(model:LoginRegisterModel) : Task<IActionResult>
+    + <<async>> UpdateProfile(model:ProfileUpdateModel) : Task<IActionResult>
+}
+ControllerBase <|-- UserController
+@enduml

@@ -5639,11 +5639,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/max/Desktop/BSUIR/ЖЦРПО/RazamAPI/razam.csproj",
+      "projectUniqueName": "/Users/max/Desktop/SDLC-social/RazamAPI/razam.csproj",
       "projectName": "razam",
-      "projectPath": "/Users/max/Desktop/BSUIR/ЖЦРПО/RazamAPI/razam.csproj",
+      "projectPath": "/Users/max/Desktop/SDLC-social/RazamAPI/razam.csproj",
       "packagesPath": "/Users/max/.nuget/packages/",
-      "outputPath": "/Users/max/Desktop/BSUIR/ЖЦРПО/RazamAPI/obj/",
+      "outputPath": "/Users/max/Desktop/SDLC-social/RazamAPI/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/max/.nuget/NuGet/NuGet.Config"
@@ -5748,7 +5748,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/Users/max/.dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   },

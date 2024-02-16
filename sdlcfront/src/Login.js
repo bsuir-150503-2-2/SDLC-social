@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
 function Login() {
-  const [credentials, setCredentials] = useState({ login: '', password: '' });
+  const [credentials, setCredentials] = useState({ User: '', Password: '' });
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -10,51 +11,70 @@ function Login() {
     setCredentials({ ...credentials, [name]: value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      const apiEndpoint = 'razam.com/register';
-  
-      const response = await fetch(apiEndpoint, {
-        method: 'POST', 
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(credentials), 
+      const apiEndpoint = 'http://localhost:5006/api/User/register';
+
+      const response = await axios.post(apiEndpoint, {
+        UserName: credentials.UserName,
+        Password: credentials.Password
       });
-  
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
+
+      const token = response.data.token;
+
+      localStorage.setItem('token', token);
+
+      navigate('/edit-profile');
     } catch (error) {
-      console.error('Error fetching random profile:', error);
+      console.error('Error:', error);
     }
-    navigate('/edit-profile');
+  };
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    try {
+      const apiEndpoint = 'http://localhost:5006/api/User/login';
+
+      const response = await axios.post(apiEndpoint, {
+        UserName: credentials.UserName,
+        Password: credentials.Password
+      });
+
+      const token = response.data.token;
+
+      localStorage.setItem('token', token);
+
+      navigate('/edit-profile');
+    } catch (error) {
+      console.error('Error:', error);
+    }
   };
 
   return (
-    <div style={{ padding: '20px', fontFamily: 'Arial' }}>
-    <div style={{ marginBottom: '20px' }}>
-    <h2 style={{ color: 'blue' }}>Register/login</h2>
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        name="login"
-        value={credentials.login}
-        onChange={handleChange}
-        placeholder="Login"
-      />
-      <input
-        type="password"
-        name="password"
-        value={credentials.password}
-        onChange={handleChange}
-        placeholder="Password"
-      />
-      <button type="submit">Login</button>
-    </form>
-    </div>
-    </div>
+      <div style={{ padding: '20px', fontFamily: 'Arial' }}>
+        <div style={{ marginBottom: '20px' }}>
+          <h2 style={{ color: 'blue' }}>Register/Login</h2>
+          <form>
+            <input
+                type="text"
+                name="UserName"
+                value={credentials.UserName}
+                onChange={handleChange}
+                placeholder="Login"
+            />
+            <input
+                type="password"
+                name="Password"
+                value={credentials.Password}
+                onChange={handleChange}
+                placeholder="Password"
+            />
+            <button onClick={handleRegister}>Register</button>
+            <button onClick={handleLogin}>Login</button>
+          </form>
+        </div>
+      </div>
   );
 }
 

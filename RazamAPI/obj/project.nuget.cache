@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qm98eEQqiXKRcPBIiPKgqJIt45y7A/lU06mM8/ruHZzM+cAx03QZ2URxZtTOysLIBTVlmMO7D6ATHBrk5EJo9g==",
+  "dgSpecHash": "1k+EeMlTYsxRRHNMkRaNkVvREIi9pX8Zo8skgCzkOwiyz89iapeWNIckJdl72pY/89oqwmXVcJFlwPK2QooMKw==",
   "success": true,
-  "projectFilePath": "/Users/max/Desktop/BSUIR/ЖЦРПО/RazamAPI/razam.csproj",
+  "projectFilePath": "/Users/max/Desktop/SDLC-social/RazamAPI/razam.csproj",
   "expectedPackageFiles": [
     "/Users/max/.nuget/packages/awssdk.core/3.7.100.14/awssdk.core.3.7.100.14.nupkg.sha512",
     "/Users/max/.nuget/packages/awssdk.securitytoken/3.7.100.14/awssdk.securitytoken.3.7.100.14.nupkg.sha512",

@@ -1,8 +1,12 @@
 using System.Security.Claims;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using razam.Models;
 
+[Route("api/[controller]")]
+[ApiController]
+[Authorize]
 public class MessageController : ControllerBase
 {
     private readonly IMessageService _messageService;

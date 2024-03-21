@@ -8,11 +8,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a0dcb04-8cb6-4352-8af1-e29945d0ade4" name="Changes" comment="" />
+    <list default="true" id="4a0dcb04-8cb6-4352-8af1-e29945d0ade4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Razam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Razam/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/ApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainDB.db" beforeDir="false" afterPath="$PROJECT_DIR$/MainDB.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/razam.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net8.0/razam.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/razam.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net8.0/razam.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/razam.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/razam.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/razam.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/razam.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/razam.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/razam.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/razam.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/razam.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/razam.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/razam.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/razam.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/razam.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/ref/razam.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/ref/razam.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/refint/razam.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/refint/razam.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/obj/rider.project.model.nuget.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="SWAP_SIDES_IN_COMPARE_BRANCHES" value="true" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Controllers/UserController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -41,7 +59,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.environmentSetup&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -109,6 +127,9 @@
       <workItem from="1700841140829" duration="631000" />
       <workItem from="1707237818828" duration="464000" />
       <workItem from="1708020790271" duration="4018000" />
+      <workItem from="1708084582410" duration="1296000" />
+      <workItem from="1711045650083" duration="2747000" />
+      <workItem from="1711049230908" duration="60000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />

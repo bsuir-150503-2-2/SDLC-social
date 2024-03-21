@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using razam.Models;
@@ -10,6 +11,9 @@ public class ApplicationDbContext : IdentityDbContext<User>
 
     public DbSet<Profile> Profiles { get; set; }
     public DbSet<Like> Likes { get; set; }
+    
+    public DbSet<Chat> Chats { get; set; }
+    public DbSet<Message> Messages { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -20,7 +24,5 @@ public class ApplicationDbContext : IdentityDbContext<User>
             .WithOne(u => u.Profile)
             .HasForeignKey<Profile>(p => p.UserId)
             .IsRequired();
-        
-        // Дополнительные настройки моделей, если необходимо
     }
 }

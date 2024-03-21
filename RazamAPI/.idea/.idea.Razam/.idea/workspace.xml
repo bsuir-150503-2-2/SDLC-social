@@ -9,19 +9,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4a0dcb04-8cb6-4352-8af1-e29945d0ade4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/MainDB.db-shm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MainDB.db-wal" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/MessageSendModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Razam/.idea/dataSources/74e85d86-4f5f-4644-bb74-1924ad17fbd5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Razam/.idea/dataSources/74e85d86-4f5f-4644-bb74-1924ad17fbd5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Razam/.idea/dataSources/74e85d86-4f5f-4644-bb74-1924ad17fbd5/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Razam/.idea/dataSources/74e85d86-4f5f-4644-bb74-1924ad17fbd5/storage_v2/_src_/schema/main.uQUzAA.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Razam/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Razam/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Data/ApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/MessageController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/MessageController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MainDB.db" beforeDir="false" afterPath="$PROJECT_DIR$/MainDB.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/Chat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Chat.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Migrations/20231123150209_InitialCreate.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Migrations/20240321220118_Init.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Migrations/20231123150209_InitialCreate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Migrations/20240321220118_Init.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Migrations/ApplicationDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Migrations/ApplicationDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/Message.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Models/Message.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/razam.dll" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net8.0/razam.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/net8.0/razam.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/net8.0/razam.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/razam.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/razam.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/razam.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/razam.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/razam.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/razam.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/razam.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/razam.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/razam.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/razam.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/razam.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/razam.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/ref/razam.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/ref/razam.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/net8.0/refint/razam.dll" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/net8.0/refint/razam.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/razam.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/razam.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +70,11 @@
     <setting file="mock:///Users/max/Desktop/SDLC-social/RazamAPI/Data/ApplicationDbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/max/Desktop/SDLC-social/RazamAPI/Data/ApplicationDbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/max/Desktop/SDLC-social/RazamAPI/Data/ApplicationDbContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/max/Desktop/SDLC-social/RazamAPI/Data/ApplicationDbContext.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Data/ApplicationDbContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Users/max/Desktop/SDLC-social/RazamAPI/Models/Chat.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1b445ceb1c5ab1d07b7b55412b10a5e21169ec87228ca8ad8a18a6982f3278/ControllerBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/a89b45965dcfa0c5c2526c6d40b0e3405d2f622d1828ab6b1332691234af5/ClaimsPrincipal.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
@@ -157,7 +172,7 @@
       <workItem from="1708020790271" duration="4018000" />
       <workItem from="1708084582410" duration="1296000" />
       <workItem from="1711045650083" duration="2747000" />
-      <workItem from="1711049230908" duration="3441000" />
+      <workItem from="1711049230908" duration="6877000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <option name="closed" value="true" />
@@ -215,7 +230,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711051863726</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Little changes.">
+      <option name="closed" value="true" />
+      <created>1711055472166</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1711055472166</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,5 +274,7 @@
     <MESSAGE value="Add" />
     <MESSAGE value="Add functional for chatting." />
     <MESSAGE value="Add &quot;Authorize&quot; for MessageController.cs" />
+    <MESSAGE value="Little changes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Little changes." />
   </component>
 </project>

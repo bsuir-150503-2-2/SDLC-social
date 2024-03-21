@@ -19,12 +19,18 @@ public class MessageController : ControllerBase
     }
 
     [HttpPost("send")]
-    public async Task<ActionResult<Message>> SendMessageAsync(string receiverId, string content)
+    public async Task<ActionResult<Message>> SendMessageAsync([FromBody] MessageSendModel model)
     {
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
+        }
+
         var senderId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-        var message = await _messageService.SendMessageAsync(senderId, receiverId, content);
+        var message = await _messageService.SendMessageAsync(senderId, model.ReceiverId, model.Content);
         return Ok(message);
     }
+
 
     [HttpGet("chats")]
     public async Task<ActionResult<List<Chat>>> GetUserChatsAsync()

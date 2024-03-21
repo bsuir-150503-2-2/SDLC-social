@@ -35,6 +35,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 
 builder.Services.AddScoped<IProfileService, ProfileService>();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IMessageService, MessageService>();
 
 builder.Services.AddAuthorization(options => options.DefaultPolicy =
     new AuthorizationPolicyBuilder
@@ -44,6 +45,7 @@ builder.Services.AddAuthorization(options => options.DefaultPolicy =
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 
 builder.Services.AddIdentity<User, IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();

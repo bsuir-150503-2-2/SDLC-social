@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace razam.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231123150209_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20240321220118_Init")]
+    partial class Init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -147,6 +147,25 @@ namespace razam.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("razam.Models.Chat", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("User1Id")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("User2Id")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Chats");
+                });
+
             modelBuilder.Entity("razam.Models.Like", b =>
                 {
                     b.Property<int>("Id")
@@ -167,6 +186,40 @@ namespace razam.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Likes");
+                });
+
+            modelBuilder.Entity("razam.Models.Message", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("ChatId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsRead")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("ReceiverId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("SenderId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("SentAt")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ChatId");
+
+                    b.ToTable("Messages");
                 });
 
             modelBuilder.Entity("razam.Models.Profile", b =>
@@ -306,6 +359,15 @@ namespace razam.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("razam.Models.Message", b =>
+                {
+                    b.HasOne("razam.Models.Chat", null)
+                        .WithMany("Messages")
+                        .HasForeignKey("ChatId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("razam.Models.Profile", b =>
                 {
                     b.HasOne("razam.Models.User", "User")
@@ -315,6 +377,11 @@ namespace razam.Migrations
                         .IsRequired();
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("razam.Models.Chat", b =>
+                {
+                    b.Navigation("Messages");
                 });
 
             modelBuilder.Entity("razam.Models.User", b =>

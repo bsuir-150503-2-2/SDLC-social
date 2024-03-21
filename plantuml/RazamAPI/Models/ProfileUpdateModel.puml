@@ -1,0 +1,5 @@
+@startuml
+class ProfileUpdateModel {
+    + Bio : string <<get>> <<set>>
+}
+@enduml

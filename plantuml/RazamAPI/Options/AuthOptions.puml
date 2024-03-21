@@ -1,0 +1,7 @@
+@startuml
+class AuthOptions {
+    + <<const>> ISSUER : string = "MyAuthServer"
+    + <<const>> AUDIENCE : string = "MyAuthClient"
+    + {static} GetSymmetricSecurityKey() : SymmetricSecurityKey
+}
+@enduml

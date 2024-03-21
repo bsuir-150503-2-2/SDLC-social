@@ -1,0 +1,11 @@
+@startuml
+class ProfileController {
+    + ProfileController(profileService:IProfileService)
+    + <<async>> GetRandomProfileAsync() : Task<ActionResult<Profile>>
+    + <<async>> GetProfileAsync(profileId:int) : Task<ActionResult<Profile>>
+    + <<async>> LikeProfile(profileId:int) : Task<ActionResult>
+    + <<async>> RejectProfile(profileId:int) : Task<ActionResult>
+    + <<async>> GetAllMatches() : Task<ActionResult<List<Profile>>>
+}
+ControllerBase <|-- ProfileController
+@enduml

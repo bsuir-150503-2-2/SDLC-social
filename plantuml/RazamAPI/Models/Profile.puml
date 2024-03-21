@@ -1,0 +1,8 @@
+@startuml
+class Profile {
+    + Id : int <<get>> <<set>>
+    + Bio : string <<get>> <<set>>
+    + UserId : string <<get>> <<set>>
+}
+Profile --> "User" User
+@enduml

@@ -1,0 +1,9 @@
+@startuml
+class UserService {
+    + UserService(userManager:UserManager<User>, context:ApplicationDbContext)
+    + <<async>> RegisterUserAsync(model:LoginRegisterModel) : Task<string>
+    + <<async>> LoginUserAsync(model:LoginRegisterModel) : Task<string>
+    + <<async>> UpdateProfileAsync(userId:string, model:ProfileUpdateModel) : Task<bool>
+}
+IUserService <|-- UserService
+@enduml

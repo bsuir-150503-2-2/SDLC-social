@@ -1,0 +1,23 @@
+@startuml
+!include .\\RazamAPI\Program.puml
+!include .\\RazamAPI\Controllers\ProfileController.puml
+!include .\\RazamAPI\Controllers\UserController.puml
+!include .\\RazamAPI\Data\ApplicationDbContext.puml
+!include .\\RazamAPI\Migrations\20231123150209_InitialCreate.puml
+!include .\\RazamAPI\Migrations\20231123150209_InitialCreate.Designer.puml
+!include .\\RazamAPI\Migrations\ApplicationDbContextModelSnapshot.puml
+!include .\\RazamAPI\Models\Like.puml
+!include .\\RazamAPI\Models\LoginRegisterModel.puml
+!include .\\RazamAPI\Models\Profile.puml
+!include .\\RazamAPI\Models\ProfileUpdateModel.puml
+!include .\\RazamAPI\Models\User.puml
+!include .\\RazamAPI\Options\AuthOptions.puml
+!include .\\RazamAPI\Services\Implementations\ProfileService.puml
+!include .\\RazamAPI\Services\Implementations\UserService.puml
+!include .\\RazamAPI\Services\Interfaces\IProfileService.puml
+!include .\\RazamAPI\Services\Interfaces\IUserService.puml
+!include .\\RazamAPI\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.puml
+!include .\\RazamAPI\obj\Debug\net8.0\razam.AssemblyInfo.puml
+!include .\\RazamAPI\obj\Debug\net8.0\razam.GlobalUsings.g.puml
+!include .\\RazamAPI\obj\Debug\net8.0\razam.MvcApplicationPartsAssemblyInfo.puml
+@enduml

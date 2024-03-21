@@ -1,0 +1,11 @@
+@startuml
+class ProfileService {
+    + ProfileService(context:ApplicationDbContext)
+    + <<async>> GetRandomProfileAsync() : Task<Profile>
+    + <<async>> GetProfileAsync(profileId:int) : Task<Profile>
+    + <<async>> LikeProfileAsync(likerUserId:string, likedProfileId:int) : Task<bool>
+    + <<async>> RejectProfileAsync(rejecterUserId:string, rejectedProfileId:int) : Task<bool>
+    + <<async>> GetAllMatchesAsync(userId:string) : Task<List<Profile>>
+}
+IProfileService <|-- ProfileService
+@enduml

@@ -8,8 +8,6 @@ namespace razam.Models
         public int Id { get; set; }
         public string User1Id { get; set; }
         public string User2Id { get; set; }
-
-        // Навигационное свойство для связи с сообщениями
         public ICollection<Message> Messages { get; set; }
     }
 }
